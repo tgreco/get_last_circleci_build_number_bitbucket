@@ -6,7 +6,7 @@ require 'fastlane/plugin/get_last_circleci_build_number_bitbucket/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-get_last_circleci_build_number_bitbucket'
-  spec.version       = Fastlane::GetLastCircleciBuildNumber::VERSION
+  spec.version       = Fastlane::GetLastCircleciBuildNumberBitbucket::VERSION
   spec.author        = 'Dawid van der Hoven'
   spec.email         = 'dawidvdh@gmail.com'
 
