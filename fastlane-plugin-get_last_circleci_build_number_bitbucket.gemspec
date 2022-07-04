@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'dawidvdh@gmail.com'
 
   spec.summary       = 'fetches the last build number from circleci for a bitbucket project.'
-  spec.homepage      = "https://github.com/dawidvdh/get_last_circleci_build_number_bitbucker"
+  spec.homepage      = "https://github.com/tgreco/get_last_circleci_build_number_bitbucket"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
