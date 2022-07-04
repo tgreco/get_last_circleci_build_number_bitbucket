@@ -2,16 +2,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fastlane/plugin/get_last_circleci_build_number/version'
+require 'fastlane/plugin/get_last_circleci_build_number_bitbucket/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'fastlane-plugin-get_last_circleci_build_number'
+  spec.name          = 'fastlane-plugin-get_last_circleci_build_number_bitbucket'
   spec.version       = Fastlane::GetLastCircleciBuildNumber::VERSION
   spec.author        = 'Dawid van der Hoven'
   spec.email         = 'dawidvdh@gmail.com'
 
-  spec.summary       = 'fetches the last build number from circleci.'
-  spec.homepage      = "https://github.com/dawidvdh/get_last_circleci_build_number"
+  spec.summary       = 'fetches the last build number from circleci for a bitbucket project.'
+  spec.homepage      = "https://github.com/dawidvdh/get_last_circleci_build_number_bitbucker"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)

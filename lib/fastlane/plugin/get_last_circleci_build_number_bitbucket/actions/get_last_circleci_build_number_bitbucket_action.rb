@@ -3,10 +3,10 @@ require 'fastlane/action'
 module Fastlane
 	module Actions
 		module SharedValues
-      GET_LAST_CIRCLECI_BUILD_NUMBER = :GET_LAST_CIRCLECI_BUILD_NUMBER
+      GET_LAST_CIRCLECI_BUILD_NUMBER_BITBUCKET = :GET_LAST_CIRCLECI_BUILD_NUMBER_BITBUCKET
 		end
 
-    class GetLastCircleciBuildNumberAction < Action
+    class GetLastCircleciBuildNumberBitbucketAction < Action
       def self.run(params)
         Actions.verify_gem!('circleci')
         require 'circleci'
@@ -38,13 +38,13 @@ module Fastlane
 			end
 
 			def self.get
-        project = CircleCi::Project.new @user, @repository
+        project = CircleCi::Project.new @user, @repository, 'bitbucket'
         res = project.recent_builds limit: 1
         build_num = res.body.map do |e|
           e['build_num']
         end
 
-        Actions.lane_context[SharedValues::GET_LAST_CIRCLECI_BUILD_NUMBER] = build_num[0]
+        Actions.lane_context[SharedValues::GET_LAST_CIRCLECI_BUILD_NUMBER_BITBUCKET] = build_num[0]
       end
 
       def self.description

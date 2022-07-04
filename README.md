@@ -1,13 +1,13 @@
-# get_last_circleci_build_number plugin
+# get_last_circleci_build_number_bitbucket plugin
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-get_last_circleci_build_number)
 
 ## Getting Started
 
-This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-get_last_circleci_build_number`, add it to your project by running:
+This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-get_last_circleci_build_number_bitbucket`, add it to your project by running:
 
 ```bash
-fastlane add_plugin get_last_circleci_build_number
+fastlane add_plugin get_last_circleci_build_number_bitbucket
 ```
 
 Ensure you have the following enviroment variables set:
@@ -31,7 +31,7 @@ end
 
 where my `.env` contains `CIRCLECI_TOKEN`, `CIRCLECI_USER_NAME` and `CIRCLECI_REPOSITORY`.
 
-## About get_last_circleci_build_number
+## About get_last_circleci_build_number_bitbucket
 
 Makes user of [circleci gem] to fetch the last build number from circleci.
 
